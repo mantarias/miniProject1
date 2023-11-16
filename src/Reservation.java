@@ -6,11 +6,14 @@ public class Reservation {
     private LocalDateTime reservationFor;
     //who made the reservation
     private Group group;
+    private Room room;
 
-    public Reservation(LocalDateTime reservationFor, Group group) {
+    public Reservation(LocalDateTime reservationFor, Group group, Room room) {
         this.reservationTime = LocalDateTime.now();
         this.reservationFor = reservationFor;
         this.group = group;
+        this.room = room;
+
     }
 
 
