@@ -2,10 +2,14 @@ import java.util.ArrayList;
 
 public class Group {
     private ArrayList<User> members;
+    private int id;
+    private String name;
 
     // constructor that takes in a list of users
-    public Group(ArrayList<User> members) {
+    public Group(ArrayList<User> members, int id, String name) {
         this.members = members;
+        this.id = id;
+        this.name = name;
     }
 
     // add user to group
@@ -18,6 +22,14 @@ public class Group {
     }
     public ArrayList<User> getMembers() {
         return members;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
     }
 
 }
